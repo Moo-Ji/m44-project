@@ -18,7 +18,8 @@ with open('lunch2.csv', 'w', encoding='utf-8') as f:
 # 3. csv.writer
 
 import csv
-with open('lunch3.csv', 'w',newline='', encoding='utf-8') as f:
+
+with open('lunch3.csv', 'w', newline='', encoding='utf-8') as f:
     csv_writer = csv.writer(f)
     for item in lunch.items():
         csv_writer.writerow(item)
